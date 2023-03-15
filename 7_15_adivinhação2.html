@@ -1,0 +1,31 @@
+	<meta charset="utf-8">
+
+	<script>
+		function PularLinha() {
+			document.write("<br><br>");
+		}
+		function mostra(frase) {
+			document.write(frase);
+			PularLinha();
+		}
+		
+		var NumeroPensado = 4
+		
+		var tentativas = 1
+		while (tentativas <= 3) {
+			var NumeroDigitado = parseInt(prompt("Deixe um palpite sobre o número pensado pelo sistema"));
+
+			if (NumeroDigitado == NumeroPensado) {
+			alert("Você acertou o número do sistema, parabéns!");
+			break; // quebra a repetição quando a condição for verdadeira
+			}
+			else {
+			alert("Você errou!");
+			}
+			tentativas++
+		}
+
+		mostra("FIM");
+
+	</script>
+

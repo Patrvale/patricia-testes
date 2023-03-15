@@ -1,0 +1,29 @@
+	<meta charset="utf-8">
+
+	<script>
+		function PularLinha() {
+			document.write("<br><br>");
+		}
+		function mostra(frase) {
+			document.write(frase);
+			PularLinha();
+		}
+		function sorteia(n){
+			return Math.round(Math.random() * n);
+		}
+		
+		var NumeroPensado = sorteia(10);
+		var NumeroDigitado = parseInt(prompt("Deixe um palpite sobre o número pensado pelo sistema"));
+
+		if (NumeroDigitado == NumeroPensado) {
+			mostra("Você acertou o número do sistema, parabéns!");
+		}
+		
+		if (NumeroDigitado > NumeroPensado) {
+			mostra("Você errou, o número do sistema é maior");
+		}
+		if (NumeroDigitado < NumeroPensado) {
+			mostra("Você errou, o número do sistema é menor");
+		}
+	</script>
+

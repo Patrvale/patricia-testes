@@ -1,0 +1,22 @@
+	<meta charset="utf-8">
+
+	<script>
+		function PularLinha() {
+			document.write("<br><br>");
+		}
+		function mostra(frase) {
+			document.write(frase);
+			PularLinha();
+		}
+	
+	var multiplicador = 1;
+	var numeroDigitado = parseInt(prompt("Digite o número desejado para calcular a tabuada"));
+
+	while (multiplicador <=10) {
+		mostra("O Resultado de " + numeroDigitado + " x " + multiplicador + " é igual a " +numeroDigitado * multiplicador);
+		multiplicador = multiplicador + 1
+	}
+	
+
+	</script>
+

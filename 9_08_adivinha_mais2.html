@@ -1,0 +1,50 @@
+	<meta charset="utf-8">
+
+	<input/>
+	<button>Compare o meu segredo</button>
+
+	<script>
+		function sorteia() {
+			return Math.round(Math.random() * 10);
+		}
+
+		function sorteiaNumeros(quantidade) {
+			var segredos = [];
+			var numero = 1;
+			while (numero <= quantidade) {
+				segredos.push(sorteia);
+				numero++
+			}
+			return segredos;
+		}
+
+		var segredos = sorteiaNumeros(3);
+
+		var input = document.querySelector("input");
+		input.focus();
+
+function verifica() {
+
+	var achou = false;
+	for (var posição = 0; posição < segredos.length; posição++) {
+
+		if (input.value == segredos[posição]) {
+			alert("VOCÊ ACERTOU!");
+			achou = true;
+			break;
+		}
+	}
+
+		if (achou == false){
+		alert("Você errou!!!");
+		}
+
+		input.value = ""; // atribui um valor em branco para o campo input, de forma que ele fique limpo para receber outro valor
+		input.focus();
+	
+}
+	var button = document.querySelector("button");
+	button.onclick = verifica;
+
+	</script>
+

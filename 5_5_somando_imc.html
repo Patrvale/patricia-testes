@@ -1,0 +1,33 @@
+	<meta charset="utf-8">
+
+	<script>
+		function PularLinha() {
+			document.write("<br><br>");
+		}
+		function mostra(frase) {
+			document.write(frase);
+			PularLinha();
+		}
+		function CalculaIMC(Peso, Altura) {
+			return Peso / (Altura * Altura);
+			
+			}
+
+		var PesoFlavio = 73;
+		var AlturaFlavio = 1.71;
+		var IMCFlavio = CalculaIMC(PesoFlavio, AlturaFlavio);
+		
+
+		var PesoAmigo = 68;
+		var AlturaAmigo = 1.72;
+		var IMCAmigo = CalculaIMC(PesoAmigo, AlturaAmigo);
+
+		mostra("O IMC de Flávio é " + IMCFlavio);
+		mostra("O IMC do amigo de Flávio é " +IMCAmigo);
+
+		var TotalIMC = IMCFlavio + IMCAmigo
+		mostra("A soma dos IMC's é " + TotalIMC);
+
+
+	</script>
+

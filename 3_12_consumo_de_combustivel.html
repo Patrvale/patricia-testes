@@ -1,0 +1,28 @@
+<html>
+<meta charset="utf-8">
+
+
+<script>
+function pulaLinha() {
+	document.write("<br>");
+}
+	var Tanque = 40
+
+	var CaminhoComGasolina = 480
+	var ConsumoDeGasolina = CaminhoComGasolina/Tanque
+
+	var CaminhoComAlcool = 300
+	var ConsumoDeAlcool = CaminhoComAlcool/Tanque
+
+	document.write("Seu carro tem um tanque de " + Tanque + "litros e pode utilizar álcool ou gasolina.")
+	pulaLinha();
+	document.write("Com gasolina e usando todo o tanque, você percorre um caminho de " + CaminhoComGasolina + "quilômetros. Qual é o consumo de gasolina?")
+	pulaLinha();
+	document.write("O consumo de gasolina será de " + ConsumoDeGasolina+"km/l")
+	pulaLinha();
+	pulaLinha();
+	document.write("Com álcool, considerando a mesma capacidade do tanque, o carro consegue percorrer " + CaminhoComAlcool + "quilômetros. Qual é o consumo de álcool?")
+	pulaLinha();
+	document.write("O consumo de álcool sera de " + ConsumoDeAlcool+"km/l")
+</script>
+</html>

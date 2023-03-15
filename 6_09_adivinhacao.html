@@ -1,0 +1,23 @@
+	<meta charset="utf-8">
+
+	<script>
+		function PularLinha() {
+			document.write("<br><br>");
+		}
+		function mostra(frase) {
+			document.write(frase);
+			PularLinha();
+		}
+		
+		var NumeroPensado = Math.round(Math.random() * 10); // o sistema escolhe um número aleatório de 0 a 10.
+		console.log(NumeroPensado); // mostra o número do sistema pela ferramenta do desenvolvedor
+		var NumeroDigitado = parseInt(prompt("Deixe um palpite sobre o número pensado pelo sistema"));
+
+		if (NumeroDigitado == NumeroPensado) {
+			mostra("Você acertou o número do sistema, parabéns!");
+		}
+		else {
+			mostra("Você errou, o número do sistema é " + NumeroPensado);
+		}
+	</script>
+
